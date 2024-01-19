@@ -64,10 +64,18 @@ function createGalleryMarkup(images) {
   }).join('');
 }
 
-// Отримання посилання на ul.gallery
+
 const galleryContainer = document.querySelector('ul.gallery');
 
-// Вставка розмітки до DOM за одну операцію
+
 galleryContainer.innerHTML = createGalleryMarkup(images);
 
+const options = {
+    captions: true,                
+    captionType: 'attr',          
+    captionsData: 'alt',           
+    captionDelay: 250               
+  };
 
+
+  const gallery = new SimpleLightbox('.gallery a', options);
