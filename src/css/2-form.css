@@ -1,8 +1,12 @@
 .feedback-form {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-label {
+  display: flex;
+  flex-direction: column;
   color: #2e2f42;
   font-family: Montserrat;
   font-size: 16px;
@@ -76,6 +80,8 @@
   background-color: #4e75ff;
   border: none;
   margin-top: 16px;
+  height: 40px;
+  width: 95px;
 }
 
 .form-button:hover {
