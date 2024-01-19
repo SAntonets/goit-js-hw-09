@@ -74,8 +74,10 @@ const options = {
     captions: true,                
     captionType: 'attr',          
     captionsData: 'alt',           
-    captionDelay: 250               
+    captionDelay: 250,
+    overlay: true,
+    overlayOpacity: 0.8,
   };
 
 
-  const gallery = new SimpleLightbox('.gallery a', options);
+const gallery = new SimpleLightbox('.gallery a', options);

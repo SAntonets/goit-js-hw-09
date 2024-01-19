@@ -40,25 +40,3 @@ form.addEventListener('submit', function (event) {
   }
 });
 
-const input = document.getElementById('myInput');
-const textarea = document.getElementById('myTextarea');
-
-input.addEventListener('focus', () => {
-  input.setAttribute('placeholder', 'Type area');
-});
-
-input.addEventListener('blur', () => {
-  if (!input.value) {
-    input.removeAttribute('placeholder');
-  }
-});
-
-textarea.addEventListener('focus', () => {
-  textarea.setAttribute('placeholder', 'Type area');
-});
-
-textarea.addEventListener('blur', () => {
-  if (!textarea.value) {
-    textarea.removeAttribute('placeholder');
-  }
-});
